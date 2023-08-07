@@ -56,7 +56,7 @@ class HotelController
     
     
         $hotel_edit = $this->model->selectOne( $this->user);
-       /*  $resultado = $this->model->user_asesoria($this->user);  */
+      
     
          //comunicarse con el modelo
          $modeloTipoCiudad = new ConsultaSelectModel();
@@ -143,7 +143,7 @@ class HotelController
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
+           
         echo $json = json_encode($results); 
     
      

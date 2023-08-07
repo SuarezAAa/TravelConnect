@@ -13,8 +13,7 @@ class ConsultaSelectModel {
         //prepare
       $sql="SELECT * FROM ciudades";
       $sentencia = $this->con->prepare($sql);
-        //binding parameters
-        //execute
+      
       $sentencia->execute();
         //retornar resultados
       $resultados = $sentencia->fetchAll(PDO::FETCH_OBJ);
@@ -27,7 +26,7 @@ class ConsultaSelectModel {
       //prepare
     $sql="SELECT * FROM aerolinea";
     $sentencia = $this->con->prepare($sql);
-      //binding parameters
+    
       //execute
     $sentencia->execute();
       //retornar resultados
@@ -41,7 +40,7 @@ class ConsultaSelectModel {
     //prepare
   $sql="SELECT * FROM hotel";
   $sentencia = $this->con->prepare($sql);
-    //binding parameters
+  
     //execute
   $sentencia->execute();
     //retornar resultados
@@ -56,7 +55,7 @@ public function consultarVuelo(){
 $sql="SELECT * FROM vuelo
 INNER JOIN aerolinea ON aerolinea.aerolinea_id = vuelo.aerolinea_fk";
 $sentencia = $this->con->prepare($sql);
-  //binding parameters
+
   //execute
 $sentencia->execute();
   //retornar resultados

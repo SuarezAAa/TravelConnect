@@ -42,18 +42,7 @@ class VueloController
             $sub_array[] = $row["aerolinea_id"];
             $sub_array[] = $row["nombre"];
             $sub_array[] = $row["aeropuerto"];
-           /*  $sub_array[] = 
-            '<div class="btn-group btn-group-sm">
-                <a class="btn btn-alt-primary" 
-                href="index.php?c=Vuelo&a=view_Editar&aero_edit='.$row['aerolinea_id'].'">
-                    <i class="fa fa-edit mr-5"></i>&nbsp;Editar
-                </a>
-                <a class="btn btn-alt-danger mr-5 mb-5 eliminar" 
-                href="index.php?c=Vuelo&a=Eliminar_aero&id='.$row['aerolinea_id'].'" data-id="'.$row['aerolinea_id'].'">
-                    <i class="fa fa-remove mr-5"></i>&nbsp;Borrar
-                </a> 
-            </div>';
-             */
+        
            $data[]=$sub_array; 
            
          
@@ -63,7 +52,7 @@ class VueloController
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
+         
            
         echo $json = json_encode($results); 
     
@@ -107,7 +96,7 @@ class VueloController
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
+         
            
         echo $json = json_encode($results); 
     
@@ -144,7 +133,7 @@ class VueloController
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
+          
            
         echo $json = json_encode($results); 
     

@@ -91,11 +91,11 @@ class ClientesModel
         $stmt->execute($data);
         
         if ($stmt->rowCount() <= 0) {// verificar si se inserto 
-            //rowCount permite obtner el numero de filas afectadas
+            
             return false;
         }
         }catch(Exception $e){
-            //echo $e->getMessage();
+           
             header('Location:index.php?c=Reservas&a=new_reservas');
             return false;
         }

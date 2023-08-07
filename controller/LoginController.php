@@ -35,7 +35,6 @@ class LoginController {
           $_SESSION['id'] = $agente['agente_id'];
           $_SESSION['login'] = true;
 
-      /*   header("Location:index.php?c=Home&a=mostrarHome"); */
         require_once 'view/Home/Home.php';
           }   
           

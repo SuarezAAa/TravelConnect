@@ -49,10 +49,6 @@ class PaquetesController
                     <i class="fa fa-remove mr-5"></i>&nbsp;Borrar
                 </a> 
             </div>';
-           /* <a class="btn btn-alt-primary" 
-                href="index.php?c=Paquetes&a=view_Editar&paquete_edit='.$row['paquete_id'].'">
-                    <i class="fa fa-edit mr-5"></i>&nbsp;Editar
-                </a> */
            $data[]=$sub_array; 
            
          
@@ -62,7 +58,6 @@ class PaquetesController
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
         echo $json = json_encode($results); 
     
     }
@@ -87,10 +82,7 @@ class PaquetesController
                     &nbsp;Reservar
                 </a> 
             </div>';
-           /* <a class="btn btn-alt-primary" 
-                href="index.php?c=Paquetes&a=view_Editar&paquete_edit='.$row['paquete_id'].'">
-                    <i class="fa fa-edit mr-5"></i>&nbsp;Editar
-                </a> */
+       
            $data[]=$sub_array; 
            
          
@@ -100,7 +92,7 @@ class PaquetesController
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
+        
         echo $json = json_encode($results); 
     
     }

@@ -37,7 +37,6 @@ public function new_cliente(){
     if (!$exito) {
         $msj = "Ingrese los datos correctamente";
         $icon = 'error';
-       // header('Location:index.php?c=Reservas&a=view_servicios_reservas');
        
       }
 
@@ -52,10 +51,6 @@ public function new_cliente(){
 
       $_SESSION['m_crear_usuario'] = $msj;
       $_SESSION['m_icon_interesado'] = $icon;
-      //var_dump($msj);
-      
-
-    //require_once 'view/Reservas/Reservas_servicios.php';
 }
 
 
@@ -85,7 +80,6 @@ public function new_cliente(){
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
         echo $json = json_encode($results); 
     
     }

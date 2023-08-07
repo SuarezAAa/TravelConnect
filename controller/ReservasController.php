@@ -111,8 +111,7 @@ class ReservasController
         $msj = 'Guardado exitosamente';
         $icon ='success';
         
-       // echo "guardo";
-       // var_dump( $reservavuelo);
+    
         require_once 'view/Reservas/Reservas_facturaVuelo.php';
       }
 
@@ -134,9 +133,7 @@ class ReservasController
         $view_cliente_paquete = $this->model->selectOnePaquete($valoridc); //ID para el cliente y consultar para factura
        
         //Crear objeto reserva hotel  
-        //cambiar directamente a factura wuw
-        
-
+       
         $exito = $this->model->insert_reservaV($reservap);
        
        
@@ -220,7 +217,7 @@ class ReservasController
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
+        
         echo $json = json_encode($results); 
     
      
@@ -249,7 +246,7 @@ class ReservasController
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
+       
         echo $json = json_encode($results); 
     }
 
@@ -275,7 +272,7 @@ class ReservasController
             "iTotalRecords"=>count($data),
             "iTotalDisplayRecords"=>count($data),
             "aaData"=>$data);
-           /*  var_dump($results); */
+          
         echo $json = json_encode($results); 
     }
 
