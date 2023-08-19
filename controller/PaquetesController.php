@@ -7,7 +7,7 @@ require_once 'model/ConsultaSelectModel.php';
 class PaquetesController
 {
     private $model;
-
+//Metodo constructor
     public function __construct()
 
      {
